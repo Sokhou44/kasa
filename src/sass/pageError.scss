@@ -1,0 +1,40 @@
+
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .error-content {
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .error-code {
+    font-size: 12rem;
+    color: #ff6060;
+    margin: 0;
+  }
+  
+  .error-message {
+    font-size: 26px;
+    color: #ff6060;
+    margin-bottom: 80px;
+  }
+  
+  .home-link {
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  .home-link:hover {
+    text-decoration: underline;
+  }
+  
+  

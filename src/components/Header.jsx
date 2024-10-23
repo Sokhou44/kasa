@@ -10,7 +10,7 @@ const Header = () => {
             <li>Accueil</li>
             </NavLink>
             <NavLink to="/about" className={({isActive}) => (isActive ? "underline" : "")}>
-            <li>A propos</li>
+            <li>A Propos</li>
             </NavLink>
         </ul>
        </nav>

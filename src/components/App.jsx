@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Logement from "./pages/Logement";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import PageError from "./pages/PageError";
 
 
 
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/logement/:id" element={<Logement />} />
+        <Route path="*" element={<PageError />} />
       </Routes>
       </Router>
   );
