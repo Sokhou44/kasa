@@ -15,9 +15,9 @@ const Collapse = ({ title, content }) => {
         <h2>{title}</h2>
         <p>
           {isOpen ? (
-            <i className="fa-solid fa-chevron-up"></i>
-          ) : (
             <i className="fa-solid fa-chevron-down"></i>
+          ) : (
+            <i className="fa-solid fa-chevron-up"></i>
           )}
         </p>
       </div>

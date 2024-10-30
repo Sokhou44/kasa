@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "../Footer"; 
 
 
 const PageError = () => {
@@ -11,8 +12,9 @@ const PageError = () => {
         <Link to="/" className="home-link">
           Retourner sur la page d'accueil
         </Link>
+        <Footer />
       </div>
-    </div>
+      </div>
   );
 };
 

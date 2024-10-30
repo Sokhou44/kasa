@@ -25,6 +25,10 @@ const Logement = () => {
     );
   };
 
+  const fullName = logement.host.name;
+const formattedName = fullName.replace(" ", "\n"); // Pour ajouter un saut de ligne
+
+
   return (
     <div className="logement_details">
       {/* Carrousel d'images */}
@@ -67,10 +71,11 @@ const Logement = () => {
       </div>
 
       {/* Hôte */}
+      <div className="host-tag">
       <div className="logement-host">
         <div className="host-info">
-          <img src={logement.host.picture} alt={logement.host.name} />
-          <p>{logement.host.name}</p>
+        <p className="host-name">{formattedName}</p>
+        <img src={logement.host.picture} alt={logement.host.name} />
         </div>
       </div>
 
@@ -81,6 +86,7 @@ const Logement = () => {
             ★
           </span>
         ))}
+      </div>
       </div>
 
       {/* Sections Description et Équipements */}

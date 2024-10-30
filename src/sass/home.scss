@@ -1,5 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .home_page {
-  .banner {
+ .banner {
     position: relative;
     text-align: center;
     margin-top: 26px;
@@ -11,6 +17,11 @@
       margin-top: 20px;
       border-radius: 16px;
       object-fit: cover;
+      
+      @media (max-width: 768px) {
+        height: 120px;
+       
+  }
     }
 
     .banner-title {
@@ -21,7 +32,15 @@
       color: white;
       font-size: 2rem;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      
+      @media (max-width: 768px) {
+        font-size: 20px;
+        text-align: left;
+        left: 40%;
+        
+  }
     }
+
   }
 
   .gallery_section {
@@ -29,6 +48,6 @@
     justify-content: center;
     gap: 40px;
 
-   
   }
-}
+  }
+

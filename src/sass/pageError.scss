@@ -3,38 +3,56 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #fff;
     text-align: center;
     font-family: 'Arial', sans-serif;
   }
   
   .error-content {
-    max-width: 600px;
+    width: 100%;
+    // max-width: 600px;
     padding: 20px;
+    
   }
   
   .error-code {
     font-size: 12rem;
     color: #ff6060;
     margin: 0;
+
+    @media (max-width: 768px) {
+      margin-top: 80px;
+      margin-bottom: 80px;
+      font-size: 70px;
+    }
   }
   
   .error-message {
     font-size: 26px;
     color: #ff6060;
     margin-bottom: 80px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 110px;
+    }
   }
   
   .home-link {
     font-size: 1.2rem;
     color: black;
-    text-decoration: none;
     padding: 10px 20px;
-  }
-  
-  .home-link:hover {
     text-decoration: underline;
   }
+
+
+  .footer {
+    width: 100%;
+    margin-top: 70px;
+
+  }
+
+
+
+
   
   
