@@ -4,12 +4,15 @@
     justify-content: space-between;
     color: black;
     width: 100%;
-    margin-left: 70px;
+    margin-left: 60px;
     margin-top: 30px;
+
 
     @media (max-width: 768px) {
         display: flex;
         justify-content: center;
+        gap: 50px;
+        margin-top: 10px;
 
         .logo-image {
             width: 150px;
@@ -27,7 +30,9 @@
 
         ul {
             display: flex;
+            justify-content: right;
             margin-right: 130px;
+            
 
             a {
                 text-decoration: none;

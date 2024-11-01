@@ -10,7 +10,7 @@ import PageError from "./pages/PageError";
 
 
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Header />
@@ -21,8 +21,8 @@ const App = () => {
         <Route path="/logement/:id" element={<Logement />} />
         <Route path="*" element={<PageError />} />
       </Routes>
-      </Router>
+    </Router>
   );
-};
+}
 
 export default App;

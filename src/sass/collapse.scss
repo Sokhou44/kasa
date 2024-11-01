@@ -1,0 +1,38 @@
+/* Collapse.css */
+.collapse {
+ width: 100%;
+}
+
+.collapse-button {
+  width: 92%;
+  // margin-bottom: 10px;
+  padding: 15px;
+  background-color: #ff6060;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapse-content {
+  width: 87%;
+  height: 200px;
+  // margin-top: 0px;
+  padding: 15px;
+  background-color: #f6f6f6;
+  display: block;
+  font-size: 20px;
+  // padding-top: 0px;
+}
+
+
+.chevron-icon {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}

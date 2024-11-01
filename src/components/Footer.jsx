@@ -13,3 +13,4 @@ const Footer = () => {
 };
 
 export default Footer;
+console.log("Code exécuté sans erreur");

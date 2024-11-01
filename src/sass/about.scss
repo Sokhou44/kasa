@@ -25,6 +25,7 @@
 }
 
   .menu-item {
+    display: block;
     margin-bottom: 20px; 
     width: 80%;          
     margin-left: auto;   
@@ -53,16 +54,18 @@
 
     // Style du sous-menu (contenu déroulant)
     .sub-menu {
+      display: block;
       background-color: #f6f6f6; 
       padding: 15px;             
       width: 100%;               
-      box-sizing: border-box;   
+      box-sizing: border-box; 
+      line-height: 1.5;   
 
       // Texte des sous-menus
       .sub-item {
         color: #333;            
         font-size: 16px;        
-        // line-height: 1.5;       
+        line-height: 1.5;       
       }
     }
   }

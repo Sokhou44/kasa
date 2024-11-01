@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,23 +11,18 @@ const Collapse = ({ title, content }) => {
   };
 
   return (
-    <div className="collapse__dropdown__container">
-      <div className="collapse__dropdown__title" onClick={toggleCollapse}>
-        <h2>{title}</h2>
-        <p>
+    <div className="collapse">
+      <button onClick={toggleCollapse} className="collapse-button">
+        {title}
+        <span className="chevron-icon">
           {isOpen ? (
-            <i className="fa-solid fa-chevron-down"></i>
+            <FontAwesomeIcon icon={faChevronDown} />
           ) : (
-            <i className="fa-solid fa-chevron-up"></i>
+            <FontAwesomeIcon icon={faChevronUp} />
           )}
-        </p>
-      </div>
-      {/* Si l'état isOpen est vrai, le contenu est affiché */}
-      {isOpen && (
-        <div className="collapse__dropdown__content">
-          <p>{content}</p>
-        </div>
-      )}
+        </span>
+      </button>
+      {isOpen && <div className="collapse-content">{content}</div>}
     </div>
   );
 };

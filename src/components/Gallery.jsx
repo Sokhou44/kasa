@@ -15,5 +15,6 @@ const Gallery = ({ logements }) => {
     </div>
   );
 };
+console.log("Code exécuté sans erreur");
 
 export default Gallery;
