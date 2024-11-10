@@ -75,7 +75,7 @@ const formattedName = fullName.replace(" ", "\n"); // Pour ajouter un saut de li
       <div className="logement-host">
         <div className="host-info">
         <p className="host-name">{formattedName}</p>
-        <img src={logement.host.picture} alt={logement.host.name} />
+        <img src={logement.host.picture} alt= "Nathalie Jean" />
         </div>
       </div>
 
@@ -113,3 +113,4 @@ const formattedName = fullName.replace(" ", "\n"); // Pour ajouter un saut de li
 };
 
 export default Logement;
+

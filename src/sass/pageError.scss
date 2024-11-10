@@ -6,12 +6,11 @@
     background-color: #fff;
     text-align: center;
     font-family: 'Arial', sans-serif;
+    
   }
   
   .error-content {
     width: 100%;
-    // max-width: 600px;
-    // padding: 20px;
     
   }
   
@@ -42,6 +41,10 @@
     color: black;
     padding: 10px 20px;
     text-decoration: underline;
+    
+    @media (max-width: 768px) {
+      margin-bottom: 60px;
+    }
   }
 
 

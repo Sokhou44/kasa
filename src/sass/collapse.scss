@@ -5,7 +5,6 @@
 
 .collapse-button {
   width: 92%;
-  // margin-bottom: 10px;
   padding: 15px;
   background-color: #ff6060;
   border: none;
@@ -22,12 +21,14 @@
 .collapse-content {
   width: 87%;
   height: 200px;
-  // margin-top: 0px;
   padding: 15px;
   background-color: #f6f6f6;
   display: block;
   font-size: 20px;
-  // padding-top: 0px;
+ 
+  @media (max-width: 768px) {
+    width: 84%;
+}
 }
 
 

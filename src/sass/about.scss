@@ -31,43 +31,32 @@
     margin-left: auto;   
     margin-right: auto;  
 
-    @media (min-width: 380px) and (max-width: 768px) {
+    @media (max-width: 768px) {
       width: 94%; 
    }
+
+   .collapse-button {
+    width: 100%;
+  }
    
-    
-    .menu-button {
-      width: 100%;             
-      padding: 15px;            
-      background-color: #ff6060; 
-      border: none;             
-      color: white;           
-      font-size: 18px;         
-      font-weight: bold;        
-      cursor: pointer;          
-      text-align: left;         
-      display: flex; 
-      justify-content: space-between; 
-      align-items: center; 
-      transition: background-color 0.3s ease;
-    }
+   .collapse-content {
+    width: 97%;
+    height: 56px;
+    padding: 15px;
+    background-color: #f6f6f6;
+    display: block;
+    font-size: 16px;
 
-    // Style du sous-menu (contenu déroulant)
-    .sub-menu {
-      display: block;
-      background-color: #f6f6f6; 
-      padding: 15px;             
-      width: 100%;               
-      box-sizing: border-box; 
-      line-height: 1.5;   
-
-      // Texte des sous-menus
-      .sub-item {
-        color: #333;            
-        font-size: 16px;        
-        line-height: 1.5;       
-      }
-    }
+    @media (max-width: 768px) {
+      height: 90px; 
+      width: 92%;
+      font-size: 16px;
+   }
+  }
+  
   }
 }
+
+
+
 

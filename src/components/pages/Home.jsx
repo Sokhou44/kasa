@@ -22,3 +22,4 @@ const Home = () => {
 };
 
 export default Home;
+console.log("Code exécuté sans erreur");
